@@ -6,11 +6,11 @@
   <input type="checkbox" id="nav-toggle" class="nav-toggle" />
   <nav>
       <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="components/about/about.component.html">About</a></li>
-          <li><a href="components/feedback/feedback.component.html">Feedback</a></li>
-          <li><a href="components/gallery/gallery.component.html">Gallery</a></li>
-          <li><a href="components/contact/contact.component.html">Contact</a></li>
+          <li><a routerLink="/home">Home</a></li>          
+          <li><a routerLink="/about">About</a></li>
+          <li><a routerLink="/contact">Contact</a></li>
+          <li><a routerLink="/feedback">Feedback</a></li>
+          <li><a routerLink="/gallery">Gallery</a></li>
       </ul>
   </nav>
   <label for="nav-toggle" class="nav-toggle-label">
@@ -18,136 +18,6 @@
   </label>
 </header>
 
-<!--
-          HEADER
--->
-<!-- cia bus foninis paveiksliukas -->
-<div class="header">
-  <div class="header__title">Daniel Vaskevic</div>
-  <div class="header__citata">
-      Programmer<br />
-      Student
-  </div>
-   <div class="header__arrow__line">
-      <div class="header__arrow">
-        <i class="fas fa-angle-double-down" aria-hidden="true"></i>
-      </div>
-   </div>
-</div>
-
-<!--
-          PORTFOLIO
--->
-<div class="portfolio">
-  <div class="container">
-      <div class="title">
-          Portfolio
-      </div>
-
-      <div class="row">
-          <!--Tas dalykas reikalingas del to kad nepazeistu strukturos maketo -->
-
-          <!-- Darbas su partfolio -->
-
-          <div class="col-4-item">
-              <div class="portfolio-item">
-                  <!-- vertikaliems tarpams-->
-                  <div class="portfolio-item__img">
-                      <img src="../assets/img/portfolio/portfolio2.jpg" alt="About ME" width="400" height="267" />
-                  </div>
-                  <div class="portfolio-item__title">
-                      <a href="aboutme.html"> About me </a>
-                  </div>
-                  <div class="portfolio-item__text">
-                      Short description about me
-                  </div>
-              </div>
-          </div>
-
-          <!-- // Darbas su partfolio -->
-
-          <!-- Darbas su partfolio -->
-          <div class="col-4-item">
-              <div class="portfolio-item">
-                  <div class="portfolio-item__img">
-                      <img src="../assets/img/portfolio/portfolio3.jpg" alt="Images" width="400" height="267" />
-                  </div>
-                  <div class="portfolio-item__title">
-                      <a href="feedback.html"> Feedback </a>
-                  </div>
-                  <div class="portfolio-item__text">
-                      Here you can leave your feedback
-                  </div>
-              </div>
-          </div>
-          <!-- // Darbas su partfolio -->
-
-          <!-- Darbas su partfolio -->
-          <div class="col-4-item">
-              <div class="portfolio-item">
-                  <div class="portfolio-item__img">
-                      <img src="../assets/img/portfolio/portfolio1.jpg" alt="Blog" width="400" height="267" />
-                  </div>
-                  <div class="portfolio-item__title">
-                      <a href="contact.html"> Contact </a>
-                  </div>
-                  <div class="portfolio-item__text">
-                      Contact Me
-                  </div>
-              </div>
-          </div>
-
-          <!-- // Darbas su partfolio -->
-      </div>
-  </div>
-</div>
-
-<!--
-          FOOTER
--->
-<!-- cia bus foninis paveiksliukas -->
-
-<div class="footer">
-  <div class="container">
-      <div class="row">
-          <div class="col-4">
-              <p class="footer__name">Daniel Vaskevic</p>
-              <p>HTML layout and website development</p>
-          </div>
-          <div class="col-4">
-              <p class="footer__social">My social media:</p>
-              <p class="footer__social__icons">
-                  <a href="#" targer="_blank">
-                      <i class="fab fa-facebook"></i>
-                  </a>
-
-                  <a href="#" targer="_blank">
-                      <i class="fab fa-linkedin"></i>
-                  </a>
-
-                  <a href="#" targer="_blank">
-                      <i class="fab fa-github"></i>
-                  </a>
-
-                  <!--   <a href="#" targer="_blank">
-  <i class="fab fa-instagram"></i>
- </a>
+<router-outlet></router-outlet>
  
- <a href="#" targer="_blank">
-  <i class="fab fa-youtube"></i>
- </a> -->
-              </p>
-          </div>
-          <div class="col-4">
-              <div><a href="#" class="button" target="_blank">-_Contact me_-</a></div>
-
-              <p>
-                  Want more information?<br />
-                  Write me
-              </p>
-          </div>
-      </div>
-  </div>
-</div>
-
-<!--Paveiksliuku pabaiga-->
+   
