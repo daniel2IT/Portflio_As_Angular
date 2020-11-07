@@ -1,0 +1,8 @@
+      /*.................Background paveikliuko nustatymai.....................*/
+      body {
+        justify-content: center;
+        background-image: url("img/bg/bg-header.jpg"); /*back*/
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%; /*kad vaizdas butu neistemptas*/
+    }
